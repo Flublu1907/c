@@ -1,0 +1,149 @@
+/* Kayan yazının stilini tanımlıyoruz */
+.scrolling-text {
+    width: 100%; /* Ekranın tamamını kapsar */
+    overflow: hidden;
+    background-color: transparent; /* Arka plan rengini transparan yapıyoruz */
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    white-space: nowrap;
+    position: relative;
+    padding: 0; /* Üst ve alt boşlukları sıfırlıyoruz */
+    text-align: center; /* Yazının ortalanması */
+    line-height: 1; /* Satır yüksekliğini daraltıyoruz */
+}
+
+.scrolling-text p {
+    display: inline-block;
+    animation: scroll-left 10s linear infinite; /* 10 saniyede sağdan sola kayar */
+}
+
+
+
+  
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(100%); /* Yazı ekranın sağ dışına başlar */
+    }
+    100% {
+      transform: translateX(-100%); /* Yazı ekranın sol dışına kayar */
+    }
+  }
+  /* Menü öğelerinin hover efekti */
+.w3-bar-item.w3-button:hover {
+    background-color: #f1f1f1; /* Arka plan rengini değiştirebilirsiniz, örneğin gri */
+    border-radius: 24px; /* Border-radius değeri */
+    color: #333; /* Yazı rengi değişir */
+  }
+  /* Form elemanlarının arka plan rengini siyah yapmak ve yazıları beyaz yapmak için */
+.w3-input {
+    background-color: #000000; /* Arka planı siyah yapar */
+    color: #ffffff; /* Yazıyı beyaz yapar */
+    border: 1px solid #010101; /* Kenarlık rengini beyaz yapar */
+  }
+  
+  /* Button (Gönder butonu) için aynı stil */
+  .w3-button {
+    background-color: #333333; /* Butonun arka plan rengini koyu gri yapar */
+    color: #ffffff; /* Yazıyı beyaz yapar */
+    border: 1px solid #010101; /* Buton kenarlığını beyaz yapar */
+  }
+  
+  .w3-button:hover {
+    background-color: #555555; /* Hover durumunda biraz daha açık gri */
+  }
+ /* Alt Bilgi */
+footer {
+    background-color: transparent; /* Arka planı transparan yapıyoruz */
+    color: white; /* Yazı rengini beyaz yapıyoruz */
+    padding: 32px; /* Alt bilgiye boşluk veriyoruz */
+    text-align: center; /* Metni ortalıyoruz */
+  }
+  
+  footer a {
+    color: inherit; /* Link rengini footer yazı rengiyle aynı yapıyoruz */
+    text-decoration: none; /* Linkin altını çizmemek için */
+  }
+  
+  footer a:hover {
+    color: #4CAF50; /* Hover durumunda link rengini değiştirebiliriz */
+  }
+  
+  footer p {
+    margin: 0; /* Metnin altındaki boşluğu kaldırıyoruz */
+  }
+  
+  footer .copyright {
+    font-size: 14px; /* Küçük yazı için font büyüklüğünü ayarlıyoruz */
+  }
+  
+  /* Navbar Temel Stil */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #B76E3C, #8A1F2A);
+  padding: 10px 20px;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.navbar .menu {
+  display: flex;
+  gap: 15px;
+}
+
+.navbar .menu a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.navbar .menu a:hover {
+  background: linear-gradient(to right, #B76E3C, #8A1F2A);
+  background: linear-gradient(to right, #B76E3C, #8A1F2A);
+}
+
+/* Hamburger Menü */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Mobil için Menü */
+@media (max-width: 768px) {
+  .menu {
+      display: none;
+      flex-direction: column;
+      background: linear-gradient(to right, #B76E3C, #8A1F2A);
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      width: 200px;
+      border-radius: 5px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .menu a {
+      margin: 5px 0;
+  }
+
+  .hamburger {
+      display: block;
+  }
+}
+  
+  
+  

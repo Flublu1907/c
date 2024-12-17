@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+<link rel="stylesheet" href="menu.html">
+
+
+
+
+
+
+<style>
+    body {
+    background: linear-gradient(to right, #B76E3C, #8A1F2A); /* Altın ve Bordo renklerinde yumuşak geçiş */
+    font-family: "Times New Roman", Georgia, Serif;
+  }
+  .w3-bar {
+    background: linear-gradient(to right, #B76E3C, #8A1F2A); /* Altın ve Bordo renklerinde yumuşak geçiş */
+  }
+  .w3-bar-item {
+      background-color: transparent; /* Şeffaf arka plan */
+      color: white; /* Yazı rengini beyaz yapar */
+  }
+
+
+
+
+  
+  </style>
+
+  <!-- Navbar -->
+ 
+
+
+<header>
+    <div class="navbar">
+        <a href="index.html" class="logo">OSMANLI SARAY MUTFAĞI</a>
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        <nav id="menuItems" class="menu">
+            <a href="index.html#about">Hakkımızda</a>
+            <a href="menu.html" class="active">Menü</a>
+            <a href="iletisim.html">İletişim</a>
+        </nav>
+    </div>
+  </header>
+    <!-- İletişim Bölümü -->
+<div class="w3-container w3-padding-64" id="contact">
+    <h1>İletişim</h1><br>
+    <p>Her türlü etkinlik için tam hizmet sunuyoruz. İhtiyaçlarınızı anlıyor ve hem görsel olarak hem de lezzet açısından en yüksek kriterleri karşılayacak şekilde yemeklerinizi hazırlıyoruz. Bizimle iletişime geçmekten çekinmeyin.</p>
+    <p class="w3-text-black w3-large"><b>İSTANBUL,KADIKÖY</b></p>
+    <p>Ayrıca telefonla (0)212 567 89 01 veya e-posta yoluyla osmanlısaraymutfağı@gmail.com adresinden de bizimle iletişime geçebilirsiniz. Buradan mesaj da gönderebilirsiniz:</p>
+    <form action="/action_page.php" target="_blank">
+        <p><input class="w3-input w3-padding-16" type="text" placeholder="Adınız" required name="Name"></p>
+        <p><input class="w3-input w3-padding-16" type="number" placeholder="Kaç kişi?" required name="People"></p>
+        <p><input class="w3-input w3-padding-16" type="datetime-local" placeholder="Tarih ve Saat" required name="date" value="2020-11-16T20:00"></p>
+        <p><input class="w3-input w3-padding-16" type="text" placeholder="Mesajınız / Özel talepler" required name="Message"></p>
+        <p><button class="w3-button w3-light-grey w3-section" type="submit">MESAJ GÖNDER</button></p>
+      </form>
+      
+  
+  <!-- Alt Bilgi -->
+<footer class="w3-center">
+    <p class="copyright">© 2024 Kahve Dükkanı. Tüm hakları saklıdır.</p>
+  </footer>
+  
+  
+
+  <!-- Hamburger Menü Script -->
+<script>
+  function toggleMenu() {
+      var x = document.getElementById("navMenu");
+      if (x.style.display === "block") {
+          x.style.display = "none";
+      } else {
+          x.style.display = "block";
+      }
+  }
+
+</script>
+  </body>
+  </html>
+  

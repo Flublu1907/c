@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+<link rel="stylesheet" href="menu.html">
+
+
+<style>
+  body {
+  background: linear-gradient(to right, #B76E3C, #8A1F2A); /* Altın ve Bordo renklerinde yumuşak geçiş */
+  font-family: "Times New Roman", Georgia, Serif;
+}
+.w3-bar {
+  background: linear-gradient(to right, #B76E3C, #8A1F2A); /* Altın ve Bordo renklerinde yumuşak geçiş */
+}
+.w3-bar-item {
+    background-color: transparent; /* Şeffaf arka plan */
+    color: white; /* Yazı rengini beyaz yapar */
+}
+
+
+
+
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+ 
+
+
+<header>
+  <div class="navbar">
+      <a href="index.html" class="logo">OSMANLI SARAY MUTFAĞI</a>
+      <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+      <nav id="menuItems" class="menu">
+          <a href="index.html#about">Tarifler</a>
+          <a href="menu.html" class="active">Menü</a>
+          <a href="iletisim.html">İletişim</a>
+      </nav>
+  </div>
+</header>
+  
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+  <img class="w3-image" src="images/DALL·E 2024-12-03 21.58.24 - A banner for a website featuring the theme of Ottoman Palace Cuisine, showcasing an elegant and historical design. The background should be rich in de.jpeg" alt="Hamburger Catering" width="1600" height="800">
+  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+    <h1 class="w3-xxlarge">Le Catering</h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+    <hr>
+    <!-- Yemekler Arası Kayan Yazı -->
+<div class="w3-row w3-padding-64" id="scrolling-text">
+    <div class="w3-col m12 w3-padding-large w3-center">
+      <div class="scrolling-text">
+        <p>Yemeklerimizi keşfedin! Osmanlı mutfağının eşsiz lezzetlerini deneyimleyin!</p>
+      </div>
+    </div>
+  </div>
+  <hr>
+
+  <!-- About Section -->
+<!-- Yemek 1: Şehzade Kebabı -->
+<div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+      <img src="images/sehzade kebabı.jpeg" class="w3-round w3-image w3-opacity-min" alt="Şehzade Kebabı" width="600" height="750" style="margin-top: 100px;">
+    </div>
+  
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">Şehzade Kebabı</h1><br>
+      <h5 class="w3-center">Yapılışı ve Tarifi</h5>
+      <p class="w3-large">
+        Şehzade Kebabı, Osmanlı İmparatorluğu'ndan günümüze ulaşan en lezzetli ve prestijli kebaplardan biridir. Kuza etinin özenle baharatlanarak şişe dizilip, ızgarada pişirilmesiyle hazırlanır. Yanında közlenmiş sebzeler, pilav ve yoğurt ile servis edilir. Osmanlı saraylarında yapılan bu kebap, hem zengin hem de lezzetli bir yemektir.
+      </p>
+      <p class="w3-large">
+        <strong>Malzemeler:</strong><br>
+        - 500 gr kuzu eti<br>
+        - 2 yemek kaşığı zeytinyağı<br>
+        - 1 yemek kaşığı yoğurt<br>
+        - 1 tatlı kaşığı tuz<br>
+        - 1 adet soğan (rendelenmiş)<br>
+        - 1 adet domates (dilimlenmiş)<br>
+        - 1 adet kırmızı biber (dilimlenmiş)<br>
+        - 1 adet yeşil biber (dilimlenmiş)<br>
+        - 1 yemek kaşığı tereyağı<br>
+        <br>
+        <strong>Yapılışı:</strong><br>
+        1. Kuzu etini küçük parçalara ayırın ve tüm malzemelerle karıştırın.<br>
+        2. Etin üzerini kapatıp buzdolabında 1-2 saat marinasyon için bekletin.<br>
+        3. Şişlere geçirin ve ızgarada pişirin.<br>
+        4. Közlenmiş sebzeler ve pilavla birlikte sıcak servis yapın.<br>
+      </p>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Yemek 2: Vişneli Yaprak Sarması -->
+<div class="w3-row w3-padding-64" id="about">
+    <!-- Sol Taraf: Yazılar -->
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">Vişneli Yaprak Sarması</h1><br>
+      <h5 class="w3-center">Yapılışı ve Tarifi</h5>
+      <p class="w3-large">
+        Vişneli Yaprak Sarması, Osmanlı mutfağından geleneksel bir lezzet olup, tatlı ve tuzlu tatların mükemmel birleşimidir. Vişnenin ekşiliği ve etin tuzlu aroması bir arada sunulur. Zeytinyağlı iç harcı ve vişnelerle sarmalanan yapraklar, damağınızda unutulmaz bir tat bırakır.
+      </p>
+      <p class="w3-large">
+        <strong>Malzemeler:</strong><br>
+        - 500 gr üzüm yaprağı<br>
+        - 200 gr pirinç<br>
+        - 1 su bardağı zeytinyağı<br>
+        - 1 tatlı kaşığı tuz<br>
+        - 1 tatlı kaşığı şeker<br>
+        - 1 tatlı kaşığı pul biber<br>
+        - 1 tatlı kaşığı karabiber<br>
+        - 1 yemek kaşığı nar ekşisi<br>
+        - 100 gr kuru vişne<br>
+        <br>
+        <strong>Yapılışı:</strong><br>
+        1. Üzüm yapraklarını sıcak suda haşlayın ve süzün.<br>
+        2. Pirinci yıkayın, tuz, şeker, baharatlar ve nar ekşisi ile karıştırın.<br>
+        3. Vişneleri küçük parçalara ayırın ve iç harcıyla karıştırın.<br>
+        4. Her bir yaprağa harcı koyup sarın ve tencereye dizin.<br>
+        5. Üzerine zeytinyağını gezdirip, pişirin. 20-30 dakika pişirdikten sonra sıcak servis yapın.<br>
+      </p>
+    </div>
+  
+    <!-- Sağ Taraf: Görsel -->
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+      <img src="images/visneli yaprak sarması.jpeg" class="w3-round w3-image w3-opacity-min" alt="Vişneli Yaprak Sarması" width="600" height="750" style="margin-top: 100px;"> 
+    </div>
+  </div>
+  
+  <hr>
+  
+  <!-- Yemek 3: Çerkez Tavuğu -->
+<div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+      <img src="images/cerkez tavugu.jpeg" class="w3-round w3-image w3-opacity-min" alt="Çerkez Tavuğu" width="600" height="750" style="margin-top: 70px;">
+    </div>
+  
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">Çerkez Tavuğu</h1><br>
+      <h5 class="w3-center">Yapılışı ve Tarifi</h5>
+      <p class="w3-large">
+        Çerkez Tavuğu, Çerkes mutfağının en meşhur yemeklerinden biridir ve özellikle soğuk servis edilen bir meze olarak sofralarda yerini alır. Tavuk, cevizli ve baharatlı özel bir sosla harmanlanır ve servis edilir.
+      </p>
+      <p class="w3-large">
+        <strong>Malzemeler:</strong><br>
+        - 1 tavuk göğsü<br>
+        - 1 su bardağı ceviz içi<br>
+        - 3 yemek kaşığı yoğurt<br>
+        - 2 yemek kaşığı zeytinyağı<br>
+        - 1 tatlı kaşığı tuz<br>
+        - 1 tatlı kaşığı karabiber<br>
+        - 1 tatlı kaşığı pul biber<br>
+        - 1 diş sarımsak<br>
+        <br>
+        <strong>Yapılışı:</strong><br>
+        1. Tavukları haşlayın ve didikleyin.<br>
+        2. Cevizleri robottan çekin, yoğurt ve zeytinyağı ile karıştırın.<br>
+        3. Baharatları ekleyin ve tavukla karıştırın.<br>
+        4. Karışımı bir tabağa alıp, soğuduktan sonra soğuk servis yapın.<br>
+      </p>
+    </div>
+  </div>
+  
+  <hr>
+
+  <!-- Yemek 4: Erikli Kuzu İncik -->
+<div class="w3-row w3-padding-64" id="about">
+    <!-- Sol Taraf: Yazılar -->
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">Erikli Kuzu İncik</h1><br>
+      <h5 class="w3-center">Yapılışı ve Tarifi</h5>
+      <p class="w3-large">
+        Erikli Kuzu İncik, Osmanlı İmparatorluğu'ndan geleneksel bir ana yemektir. Etin yumuşacık dokusu ve eriklerin ekşiliği birleşerek mükemmel bir tat oluşturur.
+      </p>
+      <p class="w3-large">
+        <strong>Malzemeler:</strong><br>
+        - 4 adet kuzu incik<br>
+        - 2 yemek kaşığı zeytinyağı<br>
+        - 1 su bardağı erik (kurutulmuş)<br>
+        - 1 soğan (doğranmış)<br>
+        - 1 tatlı kaşığı tuz<br>
+        - 1 tatlı kaşığı karabiber<br>
+        - 1 tatlı kaşığı kekik<br>
+        - 2 diş sarımsak (ezilmiş)<br>
+        <br>
+        <strong>Yapılışı:</strong><br>
+        1. Kuzu incikleri haşlayın ve biraz kızartın.<br>
+        2. Soğan, sarımsak, zeytinyağını bir tencerede soteleyin.<br>
+        3. Erikleri ekleyip karıştırın ve haşlanmış etleri ilave edin.<br>
+        4. 40 dakika pişirdikten sonra sıcak servis yapın.<br>
+      </p>
+    </div>
+  
+    <!-- Sağ Taraf: Görsel -->
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+      <img src="images/erikli kuzu incik.jpeg" class="w3-round w3-image w3-opacity-min" alt="Erikli Kuzu İncik" width="600" height="750" style="margin-top: 70px;">
+    </div>
+  </div>
+  
+  <hr>
+  
+  <!-- Yemek 5: Patlıcanlı Pilav -->
+<div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+      <img src="/Users/egeyilmaz/Desktop/odev/images/patlıcanlı pilav.jpeg" class="w3-round w3-image w3-opacity-min" alt="Patlıcanlı Pilav" width="600" height="750" style="margin-top: 70px;">
+    </div>
+  
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">Patlıcanlı Pilav</h1><br>
+      <h5 class="w3-center">Yapılışı ve Tarifi</h5>
+      <p class="w3-large">
+        Patlıcanlı pilav, nefis ve sağlıklı bir ana yemek olarak sofralarda yer alır. Hem etli hem de sebzeli haliyle zengin bir tat sunar. Özellikle yaz aylarında sıcak ve serin akşam yemeklerinde tercih edilir.
+      </p>
+      <p class="w3-large">
+        <strong>Malzemeler:</strong><br>
+        - 1 kg patlıcan<br>
+        - 2 su bardağı pirinç<br>
+        - 1 soğan (doğranmış)<br>
+        - 1 tatlı kaşığı tuz<br>
+        - 1 tatlı kaşığı pul biber<br>
+        - 1 tatlı kaşığı karabiber<br>
+        - 2 yemek kaşığı tereyağı<br>
+        - 4 su bardağı sıcak su<br>
+        <br>
+        <strong>Yapılışı:</strong><br>
+        1. Patlıcanları küp küp doğrayın ve tuzlu suda bekletin.<br>
+        2. Pirinci yıkayıp tuz, karabiber ve pul biberle karıştırın.<br>
+        3. Tencereye tereyağını ekleyin, patlıcanları ekleyip soteleyin.<br>
+        4. Pilavı ilave edin ve sıcak suyu ekleyin. Kısık ateşte pişirin.<br>
+      </p>
+    </div>
+  </div>
+  
+  <hr>
+  
+  <!-- Yemek 6: Papaz Yahnisi -->
+<div class="w3-row w3-padding-64" id="about">
+    <!-- Sol Taraf: Yazılar -->
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">Papaz Yahnisi</h1><br>
+      <h5 class="w3-center">Yapılışı ve Tarifi</h5>
+      <p class="w3-large">
+        Papaz Yahnisi, Türk mutfağında sıkça yapılan etli yemeklerden biridir. Dana etiyle yapılan bu yemek, tereyağında pişirilen sebzeler ve baharatlarla harmanlanır.
+      </p>
+      <p class="w3-large">
+        <strong>Malzemeler:</strong><br>
+        - 400 gr dana eti<br>
+        - 1 soğan (doğranmış)<br>
+        - 2 adet patates (dilimlenmiş)<br>
+        - 1 tatlı kaşığı tuz<br>
+        - 1 tatlı kaşığı karabiber<br>
+        - 1 tatlı kaşığı kekik<br>
+        - 1 yemek kaşığı domates salçası<br>
+        <br>
+        <strong>Yapılışı:</strong><br>
+        1. Eti tencereye koyun, tuz ve baharatlarla karıştırın.<br>
+        2. Sebzeleri ekleyip pişirmeye devam edin.<br>
+        3. 30 dakika sonra sıcak servis yapın.<br>
+      </p>
+    </div>
+    
+    <!-- Sağ Taraf: Görsel -->
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+      <img src="images/papaz yahnisi.jpeg" class="w3-round w3-image w3-opacity-min" alt="Papaz Yahnisi" width="600" height="750" style="margin-top: 60px;">
+    </div>
+  </div>
+  <hr>
+  <!-- Yemekler Arası Kayan Yazı -->
+<div class="w3-row w3-padding-64" id="scrolling-text">
+  <div class="w3-col m12 w3-padding-large w3-center">
+    <div class="scrolling-text">
+      <p>Yemeklerimizi keşfedin! Osmanlı mutfağının eşsiz lezzetlerini deneyimleyin!</p>
+    </div>
+  </div>
+</div>
+<hr>
+
+  <!-- About Section -->
+<div id="hakkinda" class="w3-row w3-padding-64">
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">Hakkında</h1><br>
+      <h5 class="w3-center">Osmanlı Saray Mutfağına Yolculuk</h5>
+      <p class="w3-large">
+        Osmanlı Saray Mutfağı, zengin bir tarih ve kültürün derin izlerini taşır. Yüzyıllar boyunca Osmanlı İmparatorluğu'nun çeşitli bölgelerinde, farklı kültürlerin etkisiyle şekillenen mutfak kültürü, hem görselliği hem de lezzetleriyle tarihe damgasını vurmuştur. Saray mutfağında kullanılan malzemeler, yemek pişirme teknikleri ve sunumları, imparatorluğun gücünü ve zarafetini yansıtmaktadır.
+      </p>
+      <p class="w3-large">
+        Saray mutfağının en temel özelliklerinden biri, kullanılan malzemelerin çeşitliliği ve yemeklerin özenle hazırlanmış olmalarıdır. Farklı baharatlar, etler, zeytinyağı, süt ve süt ürünleri gibi malzemeler, Osmanlı saray mutfağında birbirinden eşsiz yemeklerin yaratılmasında başrol oynamaktadır.
+      </p>
+      <p class="w3-large">
+        Osmanlı Saray Mutfağı, sadece yemeklerin lezzetinden ibaret değildir. Aynı zamanda, yemeklerin hazırlanışında kullanılan ritüeller, sunumları ve sofra adabıyla da önemli bir yer tutar. Bu mutfak kültürünün en güzel örnekleri, Türk mutfağının köklerini oluşturan tatlar ve tariflerle günümüzde de sofralarımızda yer bulmaktadır.
+      </p>
+    </div>
+  
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+      <img src="images/hakkında.jpeg" class="w3-round w3-image w3-opacity-min" alt="Osmanlı Saray Mutfağı" width="600" height="750" style="margin-top: 100px;">
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  <hr>
+  
+  <!-- Menü Bölümü -->
+<div class="w3-row w3-padding-64" id="menu">
+    <div class="w3-col l6 w3-padding-large">
+      <h1 class="w3-center">Menümüz</h1><br>
+  
+      <!-- Şehzade Kebabı -->
+      <h4>Şehzade Kebabı</h4>
+      <p class="w3-text-black">Osmanlı Saray Mutfağı'nın en seçkin kebaplarından biridir. Özenle pişirilmiş kuzu eti, baharatlarla harmanlanarak şişe dizilir ve közde pişirilir. Yanında közlenmiş sebzelerle servis edilir.</p><br>
+  
+      <!-- Vişneli Yaprak Sarması -->
+      <h4>Vişneli Yaprak Sarması</h4>
+      <p class="w3-text-black">Zeytinyağlı üzüm yapraklarına sarılan iç harcında vişne, pirinç ve çeşitli baharatlar kullanılır. Tatlı ve tuzlu lezzetlerin mükemmel birleşimi.</p><br>
+  
+      <!-- Çerkez Tavuğu -->
+      <h4>Çerkez Tavuğu</h4>
+      <p class="w3-text-black">Fırınlanmış tavuk eti, cevizli ve sarımsaklı özel bir sosla karıştırılır. Hem hafif hem de lezzetli bir Osmanlı yemeği.</p><br>
+  
+      <!-- Erikli Kuzu İncik -->
+      <h4>Erikli Kuzu İncik</h4>
+      <p class="w3-text-black">Yumuşacık pişmiş kuzu incikleri, ekşi erik sosu ile servis edilir. Bu yemek, etin ve meyvenin mükemmel uyumunu sunar.</p><br>
+  
+      <!-- Patlıcanlı Pilav -->
+      <h4>Patlıcanlı Pilav</h4>
+      <p class="w3-text-black">Basmati pilavı ve közlenmiş patlıcanlarla yapılan bu pilav, Osmanlı mutfağının vazgeçilmez lezzetlerinden biridir.</p><br>
+  
+      <!-- Papaz Yahnisi -->
+      <h4>Papaz Yahnisi</h4>
+      <p class="w3-text-black">Dana etiyle yapılan bir tür et yemeği olan Papaz Yahnisi, tereyağında pişirilmiş sebzelerle servis edilir. Baharatları ile sofralarınıza lezzet katar.</p><br>
+    </div>
+  
+    <div class="w3-col l6 w3-padding-large">
+      <img src="images/menu.jpeg" class="w3-round w3-image w3-opacity-min" alt="Menu" style="width:100%" style="margin-top: 200px;">
+    </div>
+  </div>
+  
+  <hr>
+  
+  <!-- İletişim Bölümü -->
+<div class="w3-container w3-padding-64" id="contact">
+    <h1>İletişim</h1><br>
+    <p>Her türlü etkinlik için tam hizmet sunuyoruz. İhtiyaçlarınızı anlıyor ve hem görsel olarak hem de lezzet açısından en yüksek kriterleri karşılayacak şekilde yemeklerinizi hazırlıyoruz. Bizimle iletişime geçmekten çekinmeyin.</p>
+    <p class="w3-text-black w3-large"><b>İSTANBUL,KADIKÖY</b></p>
+    <p>Ayrıca telefonla (0)212 567 89 01 veya e-posta yoluyla osmanlısaraymutfağı@gmail.com adresinden de bizimle iletişime geçebilirsiniz. Buradan mesaj da gönderebilirsiniz:</p>
+    <form action="/action_page.php" target="_blank">
+        <p><input class="w3-input w3-padding-16" type="text" placeholder="Adınız" required name="Name"></p>
+        <p><input class="w3-input w3-padding-16" type="number" placeholder="Kaç kişi?" required name="People"></p>
+        <p><input class="w3-input w3-padding-16" type="datetime-local" placeholder="Tarih ve Saat" required name="date" value="2020-11-16T20:00"></p>
+        <p><input class="w3-input w3-padding-16" type="text" placeholder="Mesajınız / Özel talepler" required name="Message"></p>
+        <p><button class="w3-button w3-light-grey w3-section" type="submit">MESAJ GÖNDER</button></p>
+      </form>
+      
+  
+  <!-- Alt Bilgi -->
+<footer class="w3-center">
+    <p class="copyright">© 2024 Kahve Dükkanı. Tüm hakları saklıdır.</p>
+  </footer>
+  
+  
+
+  <!-- Hamburger Menü Script -->
+<script>
+  function toggleMenu() {
+      var x = document.getElementById("navMenu");
+      if (x.style.display === "block") {
+          x.style.display = "none";
+      } else {
+          x.style.display = "block";
+      }
+  }
+
+</script>
+  </body>
+  </html>
+  
